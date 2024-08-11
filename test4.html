@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*div{
+			box-sizing: border-box;
+			max-width: 50%;
+			background-color: yellow;
+			padding:5vw;
+			font-size:2vw;
+		}*/
+		body>div>div{
+			background-color: yellowgreen;
+			display:flex;
+			align-items: flex-end;
+		}
+		body>div>div>div{
+			background-color: green;
+			margin:10px;
+
+		}
+		body>div>div>div>*{
+			background-color: yellow;
+			padding:0px;
+			margin:0px;
+		}
+		p.oblique{
+			font-style:oblique;
+		}
+		/*ul {
+			list-style: circle url("images/image4.png");
+		}*/
+		a:link{
+			background-color: yellow;
+		}
+		a:hover{
+			background-color: red;
+		}
+		a:visited{
+			background-color: green;
+
+		}
+		a:active{
+			background-color: blue;
+		}
+		a.one:link {color:#ff0000;}
+	</style>
+</head>
+<body>
+<div><p class="oblique">The maximum height of this paragraph is set to 50px. The maximum
+height of this paragraph is set to 50px. The maximum height of this
+paragraph is set to 50px. The maximum height of this paragraph is set to
+50px. The maximum height of this paragraph is set to 50px. The maximum
+height of this paragraph is set to 50px. The maximum height of this
+paragraph is set to 50px. The maximum height of this paragraph is set to
+50px. The maximum height of this paragraph is set to 50px. The maximum
+height of this paragraph is set to 50px.</p></div>
+<div>
+	<div>
+	<div><h1>Name</h1><p>bangladesh</p></div>
+	<div><h1>Name</h1><p>bangladesh</p></div>
+	<div><h1>Name</h1><p>bangladesh</p></div>
+</div>
+</div>
+<div>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Coca Cola</li>
+	</ul>
+</div>
+<p><b><a href="#home" target="_blank">This is a link</a></b></p>
+<p><b><a class="one" href="default.asp" target="_blank">This link changes
+color</a></b></p>
+</body>
+</html>

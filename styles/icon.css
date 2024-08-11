@@ -1,0 +1,18 @@
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid transparent;
+  border-left: 12.12px solid white;
+  border-top: 7px solid transparent;
+  position: relative;
+  left: 1.5px;
+}
+.circle-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(230, 83, 60);
+}

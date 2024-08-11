@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+   font-family: "Inter", sans-serif;
+/*   font-family: "Mrs Saint Delafield", cursive;*/
+	max-width: 1440px;
+/*	min-width: 90%;*/
+	max-width: 75%;
+	margin: 0 auto;
+	background-color: gray;
+}
+
+
+/*NAV SECTION STARTS HERE*/
+nav , #banner{
+	margin: 0 auto;
+	border:1px solid black;
+}
+nav , nav>div>ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav>div>ul{
+	list-style: none;
+	gap:5vw;
+}
+#hamberger{
+	display: none;
+}
+/*NAV SECTION ENDS HERE*/
+/*
+
+
+
+*/
+/*BANNER SECTION STARTS HERE*/
+#banner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap:10%;
+}
+#banner img{
+	display:block;
+
+}
+.image-container{
+	position: relative;
+}
+#add-1{
+	display:flex;
+	bottom:15%;
+	left:-25%;
+	gap:10px;
+}
+#add-2{
+	top:20%;
+	right:-10%;
+}
+.add{
+	position: absolute;
+	background-color: orange;
+	padding:20px;
+	border-radius: 10px;
+
+}
+/*BANNER SECTION ENDS HERE*/
+/*
+
+
+
+
+*/
+/*CHANGE YOUR HABITS STARTS HERE*/
+#change-habit{
+	text-align: center;
+	border:1px solid black;
+}
+#change-habit>p{
+	max-width: 60%;
+	margin:0 auto;
+}
+#change-habit>div{
+	text-align: center;
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap:2%;
+}
+#change-habit img{
+	border-radius: 50%;
+	border:4px solid black;
+}
+/*CHANGE YOUR HABITS ENDS HERE*/
+/*
+
+
+
+*/
+/*RUN AN EXTRA MILE EASILY STARTS HERE*/
+#run-extra{
+	display: flex;
+	padding:30px;
+	border:1px solid black;
+	align-items: center;
+	justify-content: space-between;
+	gap:20%;
+}
+.text-part{
+	width:45%;
+}
+#run-extra .image-part{
+	height:300px;
+}
+#run-extra img{
+	max-width:100%;
+	height: 100%;
+	border-radius: 30px;
+}
+/*RUN AN EXTRA MILE EASILY ENDS HERE*/
+/*TRAININGS AND EXERCISES STARTS*/
+
+/*TRAININGS AND EXERCISES ENDS*/
+#row-1{
+	display: grid;
+	grid-template-columns: 3fe 9fr 4fr;
+/*	max-width: 100%;*/
+}
+/*RESPONSIVE PART STARTS HERE*/
+/*RESPONSIVE FOR MIDIUM DEVICE*/
+@media screen and (max-width:992px){
+	#banner{
+		flex-direction: column;
+		min-width: 80%;
+	}
+	#add-1{
+		bottom:25%;
+		left:-15%;
+	}
+	#add-2{
+		top:5%;
+		right:-15%;
+	}
+	#change-habit>div{
+		grid-template-columns: repeat(2, 1fr);
+		gap:0px;
+	}
+
+}
+
+/*RESPONSIVE FOR SMALL DEVICE*/
+@media screen and (max-width:576px){
+	nav>div>ul{
+		display: none;
+	}
+	#hamberger{
+		display: block;
+	}
+	#banner{
+		flex-direction: column;
+	}
+	#add-1{
+		bottom:40%;
+		left:-5%;
+	}
+	#add-2{
+		top:5%;
+		right:-5%;
+	}
+	.add{
+		padding:10px;
+	}
+	#change-habit>div{
+		grid-template-columns: repeat(1, 1fr);
+		gap:0px;
+	}
+	#run-extra{
+		flex-direction: column;
+	}
+}
+
+
+
+/*RESPONSIVE PART ENDS HERE*/
+
+
+
+
