@@ -1,37 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
-*{
-	margin:0px;
-	padding: 0px;
-	box-sizing: border-box;
-}
-body{
-   font-family: "Inter", sans-serif;
-/*   font-family: "Mrs Saint Delafield", cursive;*/
-	max-width: 1440px;
-/*	min-width: 90%;*/
-	max-width: 75%;
-	margin: 0 auto;
-	background-color: gray;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+body {
+  background-color: gray;
+  font-family: "Inter", sans-serif;
+}
+header,
+#change-habit,
+#run-extra,
+#training,
+#team {
+  max-width: 75%;
+  margin: 0 auto;
+}
 
 /*NAV SECTION STARTS HERE*/
-nav , #banner{
-	margin: 0 auto;
-	border:1px solid black;
+nav,
+#banner {
+  margin: 0 auto;
+  border: 1px solid black;
 }
-nav , nav>div>ul{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+nav,
+nav > div > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav>div>ul{
-	list-style: none;
-	gap:5vw;
+nav > div > ul {
+  list-style: none;
+  gap: 5vw;
 }
-#hamberger{
-	display: none;
+#hamberger {
+  display: none;
 }
 /*NAV SECTION ENDS HERE*/
 /*
@@ -40,35 +49,69 @@ nav>div>ul{
 
 */
 /*BANNER SECTION STARTS HERE*/
-#banner{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap:10%;
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
 }
-#banner img{
-	display:block;
-
+#banner h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 93.6px;
 }
-.image-container{
-	position: relative;
+#banner h1 > span {
+  font-size: 9rem;
+  font-weight: 400;
 }
-#add-1{
-	display:flex;
-	bottom:15%;
-	left:-25%;
-	gap:10px;
+#banner > div > p {
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
 }
-#add-2{
-	top:20%;
-	right:-10%;
+#banner .banner-button {
+  display: flex;
+  gap: 14px;
 }
-.add{
-	position: absolute;
-	background-color: orange;
-	padding:20px;
-	border-radius: 10px;
-
+#banner .banner-button > button {
+  padding: 16px 40px;
+  border-radius: 42px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: white;
+}
+#banner .banner-button .button-1 {
+  background: rgba(230, 83, 60, 1);
+}
+#banner .banner-button .button-2 {
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: black;
+}
+#banner img {
+  display: block;
+}
+.image-container {
+  position: relative;
+}
+#add-1 {
+  display: flex;
+  bottom: 15%;
+  left: -25%;
+  gap: 10px;
+}
+#add-2 {
+  top: 20%;
+  right: -10%;
+}
+.add {
+  position: absolute;
+  background-color: orange;
+  padding: 20px;
+  border-radius: 10px;
 }
 /*BANNER SECTION ENDS HERE*/
 /*
@@ -78,116 +121,285 @@ nav>div>ul{
 
 */
 /*CHANGE YOUR HABITS STARTS HERE*/
-#change-habit{
-	text-align: center;
-	border:1px solid black;
+#change-habit {
+  text-align: center;
+  border: 1px solid black;
 }
-#change-habit>p{
-	max-width: 60%;
-	margin:0 auto;
+#change-habit > p {
+  max-width: 60%;
+  margin: 0 auto;
 }
-#change-habit>div{
-	text-align: center;
-	display:grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap:2%;
+#change-habit > div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2%;
 }
-#change-habit img{
-	border-radius: 50%;
-	border:4px solid black;
+#change-habit img {
+  border-radius: 50%;
+  border: 4px solid black;
 }
 /*CHANGE YOUR HABITS ENDS HERE*/
+
 /*
+
+
+
+
 
 
 
 */
 /*RUN AN EXTRA MILE EASILY STARTS HERE*/
-#run-extra{
-	display: flex;
-	padding:30px;
-	border:1px solid black;
-	align-items: center;
-	justify-content: space-between;
-	gap:20%;
+#run-extra {
+  display: flex;
+  padding: 30px;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20%;
 }
-.text-part{
-	width:45%;
+.text-part {
+  width: 45%;
 }
-#run-extra .image-part{
-	height:300px;
+#run-extra .image-part {
+  /*	height:300px;*/
+  width: 450px;
+  height: 400px;
 }
-#run-extra img{
-	max-width:100%;
+#run-extra img {
+  /*	max-width:100%;
 	height: 100%;
 	border-radius: 30px;
+	object-fit:none;
+	object-position: 66% 33%;*/
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-fit: none;
+  object-position: 66% 33%;
+  transform: scale(0.9);
+  border-radius: 20px;
 }
+
 /*RUN AN EXTRA MILE EASILY ENDS HERE*/
 /*TRAININGS AND EXERCISES STARTS*/
-
-/*TRAININGS AND EXERCISES ENDS*/
-#row-1{
-	display: grid;
-	grid-template-columns: 3fe 9fr 4fr;
-/*	max-width: 100%;*/
+#training .row-1 {
+  display: grid;
+  grid-template-columns: 34fr 68fr 38fr;
+  height: 200px;
 }
+#training .row-2 {
+  display: grid;
+  grid-template-columns: 56fr 38fr 46fr;
+  height: 200px;
+}
+.rows > img {
+  position: relative;
+  background-size: cover;
+}
+.rows > .image-1 {
+  background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)),
+    url("images/exercise1.jpg");
+  background-size: 323px 218px;
+  left: -16px;
+}
+.rows > .image-2 {
+  background: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)),
+    url("images/exercise2.png");
+
+  background-size: 539px 256px;
+}
+.rows > .image-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/exercise3.png");
+
+  background-size: 388px 214px;
+}
+.rows > .image-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/exercise4.png");
+
+  background-size: 435px 240px;
+}
+.rows > .image-5 {
+  background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)),
+    url("images/exercise5.jpg");
+
+  background-size: 408px 219px;
+}
+.rows > .image-6 {
+  background: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)),
+    url("images/exercise6.jpg");
+
+  background-size: 376px 250px;
+}
+/*TRAININGS AND EXERCISES ENDS*/
+/*
+
+
+
+*/
+/*BMI CALCULATOR STARTS*/
+#bmi-cal {
+  max-width: 1440px;
+  background-color: #4f3c3c;
+}
+#bmi-cal > div > div > h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 57.6px;
+  text-align: left;
+}
+#bmi-cal > div > div > p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+#bmi-cal > div {
+  height: 300px;
+  border: 10px solid black;
+}
+.bmi-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+/*BMI CALCULATOR ENDS*/
+/* 
+
+
+*/
+/* MEET OUR TEAM STARTS */
+.team-heading {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+#team .member-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 28px;
+}
+.member-container > .member-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer1.png");
+  background-size: 338px 272px;
+}
+.member-container > .member-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer2.png");
+  background-size: 338px 272px;
+}
+.member-container > .member-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer3.png");
+  background-size: 338px 272px;
+}
+.member-container > .member-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer4.png");
+  background-size: 338px 272px;
+}
+.member-container > .member-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer5.png");
+  background-size: 338px 272px;
+}
+.member-container > .member-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("images/trainer6.png");
+  background-size: 338px 272px;
+}
+.member-container > div {
+  width: 338px;
+  height: 272px;
+  border-radius: 18px;
+  background-size: cover;
+  border: 1px solid black;
+  background-position: center;
+}
+/* MEET OUR TEAM ENDS */
+/* 
+
+
+*/
+/* FOOTER STARTS */
+footer {
+  border: 1px solid black;
+}
+footer > .footer {
+  max-width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer > .copy {
+  max-width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* FOOTER ENDS */
+
 /*RESPONSIVE PART STARTS HERE*/
 /*RESPONSIVE FOR MIDIUM DEVICE*/
-@media screen and (max-width:992px){
-	#banner{
-		flex-direction: column;
-		min-width: 80%;
-	}
-	#add-1{
-		bottom:25%;
-		left:-15%;
-	}
-	#add-2{
-		top:5%;
-		right:-15%;
-	}
-	#change-habit>div{
-		grid-template-columns: repeat(2, 1fr);
-		gap:0px;
-	}
-
+@media screen and (max-width: 992px) {
+  #banner {
+    flex-direction: column;
+    min-width: 80%;
+  }
+  #add-1 {
+    bottom: 25%;
+    left: -15%;
+  }
+  #add-2 {
+    top: 5%;
+    right: -15%;
+  }
+  #change-habit > div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
 }
 
 /*RESPONSIVE FOR SMALL DEVICE*/
-@media screen and (max-width:576px){
-	nav>div>ul{
-		display: none;
-	}
-	#hamberger{
-		display: block;
-	}
-	#banner{
-		flex-direction: column;
-	}
-	#add-1{
-		bottom:40%;
-		left:-5%;
-	}
-	#add-2{
-		top:5%;
-		right:-5%;
-	}
-	.add{
-		padding:10px;
-	}
-	#change-habit>div{
-		grid-template-columns: repeat(1, 1fr);
-		gap:0px;
-	}
-	#run-extra{
-		flex-direction: column;
-	}
+@media screen and (max-width: 576px) {
+  nav > div > ul {
+    display: none;
+  }
+  #hamberger {
+    display: block;
+  }
+  #banner {
+    flex-direction: column;
+  }
+  #add-1 {
+    bottom: 40%;
+    left: -5%;
+  }
+  #add-2 {
+    top: 5%;
+    right: -5%;
+  }
+  .add {
+    padding: 10px;
+  }
+  #change-habit > div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  #run-extra {
+    flex-direction: column;
+  }
 }
 
-
-
 /*RESPONSIVE PART ENDS HERE*/
-
-
-
-
