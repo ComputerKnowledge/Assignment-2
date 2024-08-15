@@ -22,6 +22,19 @@ header,
   max-width: 75%;
   margin: 0 auto;
 }
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 57.6px;
+}
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
 
 /*NAV SECTION STARTS HERE*/
 nav,
@@ -37,8 +50,26 @@ nav > div > ul {
 }
 nav > div > ul {
   list-style: none;
-  gap: 5vw;
+  gap: 3vw;
 }
+header > nav > div > h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 43.2px;
+}
+header > nav ul > li {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+.home-special {
+  padding: 8px 20px 8px 20px;
+  border-radius: 46px;
+  background: rgba(230, 83, 60, 1);
+  font-weight: 600;
+}
+
 #hamberger {
   display: none;
 }
@@ -55,6 +86,9 @@ nav > div > ul {
   justify-content: space-between;
   gap: 10%;
 }
+#banner > div {
+  max-width: 520px;
+}
 #banner h1 {
   font-size: 5rem;
   font-weight: 900;
@@ -64,6 +98,7 @@ nav > div > ul {
   font-size: 9rem;
   font-weight: 400;
 }
+
 #banner > div > p {
   padding: 1.5rem 0;
   font-size: 1rem;
@@ -76,7 +111,7 @@ nav > div > ul {
   gap: 14px;
 }
 #banner .banner-button > button {
-  padding: 16px 40px;
+  padding: 16px 50px;
   border-radius: 42px;
   border: none;
   font-size: 18px;
@@ -99,18 +134,33 @@ nav > div > ul {
 }
 #add-1 {
   display: flex;
+  align-items: center;
   bottom: 15%;
   left: -25%;
   gap: 10px;
+}
+#add-1 h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+#add-1 p {
+  font-size: 1rem;
+  line-height: 2rem;
 }
 #add-2 {
   top: 20%;
   right: -10%;
 }
+#add-2 h3 {
+  line-height: 3rem;
+}
+#add-2 p {
+  font-size: 0.83rem;
+}
 .add {
   position: absolute;
   background-color: orange;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 10px;
 }
 /*BANNER SECTION ENDS HERE*/
@@ -135,9 +185,17 @@ nav > div > ul {
   grid-template-columns: repeat(4, 1fr);
   gap: 2%;
 }
+#change-habit h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 21.6px;
+}
 #change-habit img {
   border-radius: 50%;
   border: 4px solid black;
+}
+#change-habit > div > div > p {
+  line-height: 18px;
 }
 /*CHANGE YOUR HABITS ENDS HERE*/
 
@@ -161,6 +219,17 @@ nav > div > ul {
 }
 .text-part {
   width: 45%;
+}
+#run-extra button {
+  padding: 16px 40px 16px 40px;
+  border-radius: 42px;
+  width: 224px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 22px;
+  background-color: orangered;
+  border: none;
+  color: white;
 }
 #run-extra .image-part {
   /*	height:300px;*/
@@ -194,6 +263,9 @@ nav > div > ul {
   display: grid;
   grid-template-columns: 56fr 38fr 46fr;
   height: 200px;
+}
+.training-heading {
+  max-width: 671px;
 }
 .rows > img {
   position: relative;
@@ -266,7 +338,6 @@ nav > div > ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
 }
 
 /*BMI CALCULATOR ENDS*/
@@ -340,13 +411,51 @@ footer {
 footer > .footer {
   max-width: 75%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+footer > .footer > div > h3 {
+  font-size: 4.4rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 84px;
+}
+footer > .footer > div > p {
+  max-width: 443px;
+}
+footer .table {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+footer .table th {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 38.4px;
+  padding: 2rem 0rem 1rem 0rem;
+}
+footer .table td {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 27.6px;
+  padding-top: 1rem;
+}
+footer > div {
+  max-width: 50%;
+}
+
 footer > .copy {
   max-width: 75%;
   margin: 0 auto;
   text-align: center;
+}
+footer > .copy p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 2rem;
 }
 /* FOOTER ENDS */
 

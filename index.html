@@ -6,6 +6,11 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="style1.css" />
     <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/icon.css" />
   </head>
   <body>
     <header>
@@ -15,12 +20,12 @@
         </div>
         <div>
           <ul>
-            <li>Home</li>
+            <li class="home-special">Home</li>
             <li>Servuce</li>
             <li>Contact</li>
             <li>About</li>
           </ul>
-          <div id="hamberger">zzz</div>
+          <div id="hamberger"><i class="fa-solid fa-bars"></i></div>
         </div>
       </nav>
       <section id="banner">
@@ -44,7 +49,9 @@
             <img src="images/Images2.png" />
           </div>
           <div class="add" id="add-1">
-            <div>O</div>
+            <div class="circle-play">
+              <div class="triangle-right"></div>
+            </div>
             <div>
               <h3>350+</h3>
               <p>Video tutorial</p>
@@ -67,22 +74,22 @@
       <div>
         <div>
           <img src="images/image2.png" />
-          <h3>Movement</h3>
+          <h6>Movement</h6>
           <p>We believe fitness should be accessible to eveyone</p>
         </div>
         <div>
           <img src="images/image3.png" />
-          <h3>Time</h3>
+          <h6>Time</h6>
           <p>We believe fitness should be accessible to eveyone</p>
         </div>
         <div>
           <img src="images/image4.png" />
-          <h3>Practice</h3>
+          <h6>Practice</h6>
           <p>We believe fitness should be accessible to eveyone</p>
         </div>
         <div>
           <img src="images/image5.png" />
-          <h3>Weight Loss</h3>
+          <h6>Weight Loss</h6>
           <p>We believe fitness should be accessible to eveyone</p>
         </div>
       </div>
@@ -112,11 +119,13 @@
 	-->
     <!-- TRAININGS AND EXERSISES STARTS-->
     <section id="training">
-      <h3>Trainings and Exercises</h3>
-      <p>
-        We believe fitness should be accessible to everyone, everywhere
-        regardless of income or access to a gym.
-      </p>
+      <div class="training-heading">
+        <h3>Trainings and Exercises</h3>
+        <p>
+          We believe fitness should be accessible to everyone, everywhere
+          regardless of income or access to a gym.
+        </p>
+      </div>
       <div class="row-1 rows">
         <div class="image-1"></div>
         <div class="image-2"></div>
@@ -181,28 +190,45 @@
             professional workouts.
           </p>
         </div>
-        <div>
+        <div class="table">
+          <table>
+            <tbody>
+              <tr>
+                <th>Get Started</th>
+              </tr>
+              <tr>
+                <td>Service</td>
+              </tr>
+              <tr>
+                <td>Contact Us</td>
+              </tr>
+              <tr>
+                <td>Affiliate Program</td>
+              </tr>
+              <tr>
+                <td>About Us</td>
+              </tr>
+            </tbody>
+          </table>
           <table>
             <tr>
               <th>Get Started</th>
-              <th>Get Started</th>
             </tr>
-            <tr>
-              <td>Service</td>
-              <td>Fitness</td>
-            </tr>
-            <tr>
-              <td>Contact Us</td>
-              <td>Platform</td>
-            </tr>
-            <tr>
-              <td>Affiliate Program</td>
-              <td>Workout Library</td>
-            </tr>
-            <tr>
-              <td>About Us</td>
-              <td>App Design</td>
-            </tr>
+
+            <tbody>
+              <tr>
+                <td>Service</td>
+              </tr>
+              <tr>
+                <td>Contact Us</td>
+              </tr>
+              <tr>
+                <td>Affiliate Program</td>
+              </tr>
+              <tr>
+                <td>About Us</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
