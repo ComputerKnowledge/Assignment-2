@@ -24,7 +24,8 @@ nav,
 #change-habit,
 #run-extra,
 #training,
-#team {
+#team,
+#faq {
   max-width: 75%;
   margin: 0 auto;
 }
@@ -571,10 +572,47 @@ option {
 
 
 */
+/* FAQ STARTS */
+#faq {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 0rem 2rem;
+  margin: 5rem auto;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  position: relative;
+}
+#faq:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+}
+#faq h3 {
+  position: sticky;
+  top: 20px;
+}
+#faq > div {
+  max-height: 400px;
+  overflow: auto;
+}
+#faq > div > div,
+#faq h3 {
+  border: 1px solid white;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  border-radius: 18px;
+  background-color: black;
+}
+#faq span {
+  font-weight: 900;
+}
+/* FAQ STARTS */
+/* 
+
+
+*/
 /* FOOTER STARTS */
 footer {
   background-color: rgba(255, 255, 255, 0.12);
   border: 1px solid black;
+  margin-top: 5rem;
 }
 
 footer > .footer > div {
@@ -667,7 +705,8 @@ footer > div > div {
   #team,
   .bmi-heading,
   #calculator,
-  .copy {
+  .copy,
+  #faq {
     max-width: 90%;
     margin: 0 auto;
   }
