@@ -243,3 +243,12 @@ footer>div{
   width:100%;
   background-color: var(--color-3);
 }
+@media screen and (max-width:576px){
+  *{
+    border:1px solid white;
+  }
+  nav,main{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

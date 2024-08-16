@@ -5,13 +5,17 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html {
+/*html {
   max-width: 1440px;
   margin: 0 auto;
-  border: 1px solid black;
+  background-color: gray;
+}*/
+html {
   background-color: gray;
 }
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: black;
   font-family: "Inter", sans-serif;
 }
@@ -37,7 +41,8 @@ h3,
 h4,
 h5,
 h6,
-caption {
+caption,
+i {
   color: white;
 }
 p,
@@ -202,6 +207,9 @@ header > nav ul > li {
 #add-2 p {
   font-size: 0.83rem;
 }
+#button-11 {
+  display: none;
+}
 
 /*BANNER SECTION ENDS HERE*/
 /*
@@ -312,10 +320,6 @@ header > nav ul > li {
   display: flex;
   flex-direction: column;
 }
-.rows > img {
-  position: relative;
-  background-size: cover;
-}
 .rows > .image-1 {
   background: linear-gradient(rgba(6, 255, 210, 0.5), rgba(6, 255, 210, 0.5)),
     url("images/exercise1.jpg");
@@ -352,6 +356,43 @@ header > nav ul > li {
 
   background-size: 376px 250px;
 }
+.rows > div > div {
+  position: relative;
+}
+.rows > div > div > p {
+  position: absolute;
+  font-weight: 600;
+}
+.image-1 > div > p {
+  left: 30px;
+  bottom: -180px;
+  color: black;
+}
+.image-2 > div > p {
+  top: 10px;
+  left: 20px;
+  color: white;
+}
+.image-3 > div > p {
+  left: 30px;
+  bottom: -180px;
+  color: white;
+}
+.image-4 > div > p {
+  right: 40px;
+  top: 20px;
+  color: white;
+}
+.image-5 > div > p {
+  left: 30px;
+  bottom: -180px;
+  color: white;
+}
+.image-6 > div > p {
+  left: 30px;
+  bottom: -180px;
+  color: white;
+}
 
 /*TRAININGS AND EXERCISES ENDS*/
 /*
@@ -362,6 +403,10 @@ header > nav ul > li {
 /*BMI CALCULATOR STARTS*/
 #bmi-cal {
   max-width: 1440px;
+}
+.calculator {
+  background-color: rgba(34, 34, 34, 1);
+  padding: 3rem 0rem;
 }
 .bmi-heading {
   display: flex;
@@ -441,6 +486,10 @@ option {
 
 #calculator form > div {
   display: flex;
+}
+.bmi-heading h2,
+.team-heading h3 {
+  margin-bottom: 1rem;
 }
 
 /*BMI CALCULATOR ENDS*/
@@ -568,13 +617,15 @@ footer .table td {
 footer > div > div {
   max-width: 50%;
 }
-
-.copy > div {
+.copy {
   max-width: 75%;
   margin: 0 auto;
-  text-align: center;
+}
+.copy > div {
+  margin: 0 auto;
 }
 .copy p {
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 24px;
@@ -587,7 +638,6 @@ footer > div > div {
 @media screen and (max-width: 992px) {
   #banner {
     flex-direction: column;
-    min-width: 80%;
   }
   #add-1 {
     bottom: 25%;
@@ -605,32 +655,189 @@ footer > div > div {
 
 /*RESPONSIVE FOR SMALL DEVICE*/
 @media screen and (max-width: 576px) {
+  /* * {
+    border: 1px solid white;
+  } */
+
+  nav,
+  #banner,
+  #change-habit,
+  #run-extra,
+  #training,
+  #team,
+  .bmi-heading,
+  #calculator,
+  .copy {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  h2,
+  h3,
+  h4 {
+    font-size: 2rem;
+    line-height: 38px;
+  }
   nav > div > ul {
     display: none;
   }
-  #hamberger {
+  nav {
+    padding: 4rem 0px 2rem 0px;
+  }
+  header > nav > div > h2 {
+    font-size: 3rem;
+  }
+  #hamberger,
+  #button-11 {
     display: block;
+  }
+  #button-1 {
+    display: none;
+  }
+  #hamberger > i {
+    transform: scale(2);
+    position: relative;
+    left: -1rem;
   }
   #banner {
     flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 0px 0px 0px;
+  }
+
+  #banner h1 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  #banner h1,
+  #banner > div > p {
+    max-width: 70%;
+  }
+
+  #banner h1 > span {
+    font-size: 5rem;
+  }
+  #banner .banner-button .button-1 {
+    padding: 10px 40px;
+  }
+  #banner .banner-button .button-2 {
+    padding: 10px 20px;
+  }
+  #banner .banner-button {
+    max-width: 400px;
+    margin: 1.5rem 0px;
+  }
+  .image-container {
+    margin: 0 auto;
+    padding: 2rem 0px;
   }
   #add-1 {
     bottom: 40%;
     left: -5%;
   }
   #add-2 {
-    top: 5%;
+    top: 12%;
     right: -5%;
   }
   .add {
-    padding: 10px;
+    padding: 8px 15px;
+  }
+  #add-1 h3,
+  #add-2 h3 {
+    font-size: 2rem;
+    line-height: normal;
+  }
+  #change-habit {
+    padding: 1rem 0rem 3rem 0rem;
+  }
+  #change-habit p {
+    max-width: 60%;
+    margin: 0 auto;
   }
   #change-habit > div {
     grid-template-columns: repeat(1, 1fr);
     gap: 0px;
   }
   #run-extra {
+    margin: 2rem auto;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .text-part {
+    width: 100%;
+    padding: 2rem;
+  }
+  #run-extra .image-part {
+    width: 100%;
+  }
+  .rows > .image-3,
+  .rows > .image-6 {
+    display: none;
+  }
+  #training .row-1 {
+    grid-template-columns: 34fr 68fr;
+  }
+  #training .row-2 {
+    grid-template-columns: 56fr 38fr;
+  }
+  .rows > .image-1 {
+    background-size: 175px 128px;
+    background-size: cover;
+  }
+  .rows > .image-2 {
+    background-size: 259px 127px;
+    background-size: cover;
+  }
+  .rows > .image-4 {
+    background-size: 157px 127px;
+    background-size: cover;
+  }
+  .rows > .image-5 {
+    background-size: 210px 127px;
+    background-size: cover;
+  }
+  .bmi-heading {
+    padding: 3rem 0px;
+  }
+  .bmi-heading > div > h2 {
+    margin-bottom: 1rem;
+  }
+  #calculator {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #calculator > div {
+    width: 100%;
+  }
+  .team-heading {
+    max-width: fit-content;
+    gap: 1rem;
+  }
+  .member-container > .member-1,
+  .member-container > .member-4 {
+    display: none;
+  }
+  #team .member-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1200px;
+  }
+  footer > .footer > div {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  footer .table {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .copy > div {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .copy p {
+    padding: 2rem 0px;
+    font-size: 1.3rem;
   }
 }
 
